@@ -12,9 +12,9 @@ do {
     $msg = trim($msg);
     echo $msg."\n";
 
-    echo "Enter reply";
-    $reply=fgets(STDIN);
-    socket_write($accept, $reply, strlen($reply));
+    // echo "Enter reply";
+    // $reply=fgets(STDIN);
+    // socket_write($accept, $reply, strlen($reply));
 } while (true);
 
 
