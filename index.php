@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit']) && $_POST['msg'] != '') {
-    $host = "127.0.0.1";
+    $host = "ocpp-test1.herokuapp.com";
     $port = 80;
     $socket = socket_create(AF_INET, SOCK_STREAM, 0) or die('socket not created');
     socket_connect($socket, $host, $port) or die('Socket not connect');
