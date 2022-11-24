@@ -7,9 +7,9 @@ if (isset($_POST['submit']) && $_POST['msg'] != '') {
     $msg = $_POST['msg'] ;
     socket_write($socket, $msg, strlen($msg));
 
-    $reply=socket_read($socket, 1024);
-    $reply=trim($reply);
-    echo $reply;
+    // $reply=socket_read($socket, 1024);
+    // $reply=trim($reply);
+    // echo $reply;
     socket_close($socket);
 }
 
