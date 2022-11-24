@@ -3,6 +3,7 @@ $host = "ocpp-test1.herokuapp.com";
 $port = 80;
 $socket = socket_create(AF_INET, SOCK_STREAM, 0) or die('socket not created');
 $result = socket_bind($socket, $host, $port) or die('Sockect not Bind');
+socket_connect($socket, $host, $port) or die('Socket not connect');
 $result = socket_listen($socket, 3) or die('socket not listen');
 
 do {
